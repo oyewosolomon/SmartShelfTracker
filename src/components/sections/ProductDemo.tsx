@@ -29,6 +29,7 @@ export default function ProductDemo() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
+       
             <Card className="overflow-hidden">
               <div className="relative aspect-video bg-muted">
                 {/* Replace src with actual demo video URL */}
