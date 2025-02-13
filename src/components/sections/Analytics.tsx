@@ -37,19 +37,21 @@ export default function Analytics() {
           transition={{ duration: 0.5 }}
         >
           <Card className="p-6">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               <div className="lg:col-span-2">
                 <h4 className="font-semibold mb-4">Sales Performance</h4>
-                <BarChart
-                  data={data}
-                  index="name"
-                  categories={["value"]}
-                  colors={["primary"]}
-                  valueFormatter={(value) => `$${value}`}
-                  className="h-[300px]"
-                />
+                <div className="w-full overflow-x-auto">
+                  <BarChart
+                    data={data}
+                    index="name"
+                    categories={["value"]}
+                    colors={["primary"]}
+                    valueFormatter={(value) => `$${value}`}
+                    className="min-w-[300px] h-[200px] sm:h-[300px]"
+                  />
+                </div>
               </div>
-              <div>
+              <div className="order-first lg:order-last">
                 <img
                   src="https://images.unsplash.com/photo-1556155092-490a1ba16284"
                   alt="Analytics Dashboard"
