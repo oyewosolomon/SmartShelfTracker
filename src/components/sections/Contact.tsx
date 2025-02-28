@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, MessageSquare, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MessageSquare, Phone } from "lucide-react";
+import { FaTiktok, FaXTwitter } from "react-icons/fa6";
+
 
 export default function Contact() {
   return (
@@ -79,7 +81,28 @@ export default function Contact() {
                 <p className="text-muted-foreground">Available 24/7 for support</p>
               </div>
             </div>
+            <div className="mt-8 pt-8 border-gray-200">
+                    <h4 className={`font-bold mb-4 text-gray-800}`}>Connect</h4>
+                    <div className="flex gap-4">
+                      <a href="www.facebook.com/emmanuel.kenneth.54" className="bg-gray-100 p-3 rounded-lg hover:bg-blue-100 transition-colors">
+                        <Facebook className="text-gray-700 hover:text-blue-600" size={20} />
+                      </a>
+                      <a href="https://instagram.com/manlikekenzay" className="bg-gray-100 p-3 rounded-lg hover:bg-blue-100 transition-colors">
+                        <Instagram className="text-gray-700 hover:text-blue-600" size={20} />
+                      </a>
+                      <a href="https://www.linkedin.com/in/kennethemmanuel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="bg-gray-100 p-3 rounded-lg hover:bg-blue-100 transition-colors">
+                        <Linkedin className="text-gray-700 hover:text-blue-600" size={20} />
+                      </a>
+                      <a href="https://tiktok.com/@manlikekenzay" className="bg-gray-100 p-3 rounded-lg hover:bg-blue-100 transition-colors">
+                        <FaTiktok className="text-gray-700 hover:text-blue-600" size={20} />
+                      </a>
+                      <a href="https://twitter.com/iamkobaken" className="bg-gray-100 p-3 rounded-lg hover:bg-blue-100 transition-colors">
+                        <FaXTwitter className="text-gray-700 hover:text-blue-600" size={20} />
+                      </a>
+                    </div>
+          </div>
           </motion.div>
+          
         </div>
       </div>
     </section>

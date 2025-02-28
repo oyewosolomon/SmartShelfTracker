@@ -37,8 +37,8 @@ export default function Analytics() {
           transition={{ duration: 0.5 }}
         >
           <Card className="p-6">
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-              <div className="lg:col-span-2">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 ">
+              <div className="lg:col-span-2 ">
                 <h4 className="font-semibold mb-4">Sales Performance</h4>
                 <div className="w-full overflow-x-auto">
                   <BarChart

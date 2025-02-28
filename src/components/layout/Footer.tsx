@@ -11,7 +11,7 @@ const navItems = [
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-muted/50">
+    <footer className="border-t bg-blue-600/10">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

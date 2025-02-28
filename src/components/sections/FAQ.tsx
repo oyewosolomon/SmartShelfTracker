@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Bubbles from "./Bubbles";
 
 const faqs = [
   {
@@ -32,7 +33,8 @@ const faqs = [
 export default function FAQ() {
   return (
     <section id="faq" className="py-24 bg-muted/50">
-      <div className="container">
+      <div className="container relative z-10">
+       <Bubbles />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +59,7 @@ export default function FAQ() {
         >
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionItem key={index} value={`item-${index}`} className="my-4">
                 <AccordionTrigger className="text-left">
                   {faq.question}
                 </AccordionTrigger>
