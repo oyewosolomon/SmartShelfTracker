@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import { SectionProps } from "@/types/Type";
 
 const stories = [
   {
@@ -17,7 +18,7 @@ const stories = [
   }
 ];
 
-export default function Success() {
+export default function Success({id}: SectionProps) {
   return (
     <section id="success" className="py-24 bg-muted/50">
       <div className="container">

@@ -9,22 +9,34 @@ import Partners from "@/components/sections/Partners";
 import FAQ from "@/components/sections/FAQ";
 import ProductDemo from "@/components/sections/ProductDemo";
 import Footer from "@/components/layout/Footer";
+import { useEffect } from "react";
+import { smoothScrollTo } from "../utils/smoothScroll";
 
 export default function Home() {
+
+  useEffect(() => {
+    // Smooth scroll to section when URL has a hash (e.g., #features)
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      smoothScrollTo(targetId);
+    }
+  }, []);
+  
   return (
     <main>
       <Hero />
-      <Features />
-      <ProductDemo />
-      <Analytics />
-      <Pricing />
-      <Partners />
-      <Success />
+      <Features id="features" />
+      <ProductDemo id="product-demo" />
+      <Analytics id="analytics" />
+      <Pricing id="pricing" />
+      <Partners id="partners" />
+      <Success id="success" />
       <hr />
-      <FAQ />
-      <Team />
-      <Contact />
-      <Footer/>
+      <FAQ id="faq" />
+      <Team id="team" />
+      <Contact id="contact" />
+      <Footer />
     </main>
   );
 }

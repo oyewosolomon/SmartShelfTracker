@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Boxes, BarChart3, Brain, Zap } from "lucide-react";
 import Bubbles from "./Bubbles";
+import { SectionProps } from "@/types/Type";
 
 
 const features = [
@@ -27,9 +28,9 @@ const features = [
   },
 ];
 
-export default function Features() {
+export default function Features({ id }: SectionProps) {
   return (
-    <section id="features" className="py-24 bg-muted/50 relative overflow-hidden">
+    <section className="py-24 bg-muted/50 relative overflow-hidden">
       {/* Bubbles Background */}
       <Bubbles />
 

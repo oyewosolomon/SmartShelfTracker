@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Twitter } from "lucide-react";
+import { SectionProps } from "@/types/Type";
 
 const team = [
   {
@@ -32,7 +33,7 @@ const team = [
   }
 ];
 
-export default function Team() {
+export default function Team({id}: SectionProps) {
   return (
     <section id="team" className="py-24">
       <div className="container">

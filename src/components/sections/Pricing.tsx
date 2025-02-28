@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { SectionProps } from "@/types/Type";
 
 const plans = [
   {
@@ -45,7 +46,7 @@ const plans = [
   }
 ];
 
-export default function Pricing() {
+export default function Pricing({id}: SectionProps) {
   return (
     <section id="pricing" className="py-24 bg-muted/50">
       <div className="container">

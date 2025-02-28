@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { BarChart } from "@/components/ui/chart";
+import { SectionProps } from "@/types/Type";
 
-export default function Analytics() {
+export default function Analytics({id}: SectionProps) {
   const data = [
     { name: "Jan", value: 400 },
     { name: "Feb", value: 300 },

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion, useAnimationControls } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cloud, ShoppingBag, CreditCard, BarChart, Database, Network } from "lucide-react";
+import { SectionProps } from '@/types/Type';
 
 const partners = [
   {
@@ -52,7 +53,7 @@ const partners = [
   }
 ];
 
-export default function Partners() {
+export default function Partners({id}: SectionProps) {
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimationControls();
 

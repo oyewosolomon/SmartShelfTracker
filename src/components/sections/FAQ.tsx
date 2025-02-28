@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Bubbles from "./Bubbles";
+import { SectionProps } from "@/types/Type";
 
 const faqs = [
   {
@@ -30,7 +31,7 @@ const faqs = [
   }
 ];
 
-export default function FAQ() {
+export default function FAQ({id}: SectionProps) {
   return (
     <section id="faq" className="py-24 bg-muted/50">
       <div className="container relative z-10">

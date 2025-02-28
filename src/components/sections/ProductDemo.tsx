@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, X } from "lucide-react";
+import { SectionProps } from "@/types/Type";
 
-export default function ProductDemo() {
+
+export default function ProductDemo({id}: SectionProps) {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const toggleFullScreen = () => {

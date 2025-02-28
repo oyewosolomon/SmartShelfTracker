@@ -5,9 +5,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Facebook, Instagram, Linkedin, Mail, MessageSquare, Phone } from "lucide-react";
 import { FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { SectionProps } from "@/types/Type";
 
 
-export default function Contact() {
+export default function Contact({id}: SectionProps) {
   return (
     <section id="contact" className="py-24 bg-muted/50">
       <div className="container">
