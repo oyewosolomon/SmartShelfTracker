@@ -5,6 +5,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Merriweather', 'serif'], // Make Merriweather default
+        sans: ['ui-sans-serif', 'system-ui', 'sans-serif'], // Fallback
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
