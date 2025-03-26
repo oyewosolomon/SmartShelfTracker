@@ -63,25 +63,11 @@ export default function Contact({id}: SectionProps) {
               <Mail className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h3 className="font-semibold mb-2">Email Us</h3>
-                <p className="text-muted-foreground">contact@smartshelf.com</p>
+                <p className="text-muted-foreground">hello@smartshelftech.com</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Phone className="h-6 w-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold mb-2">Call Us</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <MessageSquare className="h-6 w-6 text-primary mt-1" />
-              <div>
-                <h3 className="font-semibold mb-2">Live Chat</h3>
-                <p className="text-muted-foreground">Available 24/7 for support</p>
-              </div>
-            </div>
+          
             <div className="mt-8 pt-8 border-gray-200">
                     <h4 className={`font-bold mb-4 text-gray-800}`}>Connect</h4>
                     <div className="flex gap-4">

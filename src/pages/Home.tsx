@@ -31,7 +31,7 @@ export default function Home() {
       <Analytics id="analytics" />
       <Pricing id="pricing" />
       <Partners id="partners" />
-      <Success id="success" />
+      {/* <Success id="success" /> */}
       <hr />
       <FAQ id="faq" />
       <Team id="team" />
