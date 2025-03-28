@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-background" />
 
       <div className="my-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,10 +41,10 @@ export default function Hero() {
             initial={{ opacity: 0, x: -200 }} // Start off-screen to the left
             animate={{ opacity: 1, x: 0 }} // Slide in to its natural position
             transition={{ duration: 2.5, ease: "easeOut" }} 
-            className="relative"
+            className="h-screen bg-[#B4D9EF] bg-background/50 backdrop-blur-sm flex justify-center items-center"
           >
-            <div className="aspect-square rounded-full bg-primary/10 absolute -right-20 -top-20 blur-3xl" />
-            <div className="relative bg-background/50 backdrop-blur-sm p-8">
+            {/* <div className="aspect-square rounded-full bg-primary/10 absolute -right-20 -top-20 blur-3xl" /> */}
+            <div className="relative p-8">
               <img
                 src="https://images.unsplash.com/photo-1733507267119-5b7ea4a989cb"
                 alt="IoT Sensor Demo"
