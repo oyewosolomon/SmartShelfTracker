@@ -7,7 +7,7 @@ import { SectionProps } from "@/types/Type";
 const plans = [
   {
     name: "Starter",
-    price: "$299",
+    price: "₦10,000",
     description: "Perfect for small retail stores",
     features: [
       "Up to 5 smart shelves",
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "$599",
+    price: "₦50,000",
     description: "Ideal for growing businesses",
     popular: true,
     features: [
